@@ -1,0 +1,26 @@
+# Core LangChain
+langchain
+langchain-core
+langchain-community
+
+# LLM Providers
+langchain-groq
+langchain-google-genai
+langchain-mistralai
+langchain_huggingface
+
+# Official SDKs
+groq
+google-generativeai
+mistralai
+
+# Environment Variables
+python-dotenv
+
+# Optional (commonly used)
+requests
+pydantic
+fastapi
+uvicorn
+transformers
+PyTorch
