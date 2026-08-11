@@ -1,0 +1,13 @@
+from dotenv import load_dotenv
+load_dotenv()
+
+from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
+
+llm = HuggingFaceEndpoint(
+    repo_id="deepseek-ai/DeepSeek-V4-Flash-0731")
+
+model = ChatHuggingFace(llm=llm)
+
+response = model.invoke("What is machine learning?, give answer in 1 paragraph")
+
+print(response.content)
